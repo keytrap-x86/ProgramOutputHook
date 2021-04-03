@@ -57,7 +57,8 @@ namespace ProgramOutputHook
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
 
-            Console.WriteLine($"Program {programToListenTo} started{(string.IsNullOrEmpty(programArgument) ? "." : $"with arguments : '{programArgument}'")}");
+            Console.WriteLine($"Program {programToListenTo} started" +
+                              $"{(string.IsNullOrEmpty(programArgument) ? "." : $"with arguments : '{programArgument}'")}");
 
             process.WaitForExit();
         }
