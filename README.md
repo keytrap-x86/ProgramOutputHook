@@ -2,7 +2,7 @@
 
 Demonstrates how one can easily hook to a program's output and display it in a console (or GUI app)
 
-The most interesting par :
+The most interesting part :
 
 ```csharp
 private static void StartProcess(string programToListenTo, string programArgument = null) {
